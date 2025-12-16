@@ -141,6 +141,10 @@ const DataAIPage = () => {
             <h3>Business Intelligence Solutions</h3>
             <p>Implementing BI tools and strategies for organizational growth.</p>
           </div>
+            <div className="expertise-card">
+            <h3>Data Engineering</h3>
+            <p>Managing the data stores, maintaining and orchestrating end-to-end data pipeline.</p>
+          </div>
         </div>
       </div>
 
@@ -149,12 +153,16 @@ const DataAIPage = () => {
         <div className="tech-tags">
           <span className="tech-tag">Python</span>
           <span className="tech-tag">TensorFlow</span>
-          <span className="tech-tag">PyTorch</span>
-          <span className="tech-tag">Tableau</span>
           <span className="tech-tag">Power BI</span>
+          <span className="tech-tag">Tableau</span>
+          <span className="tech-tag">DBT</span>
           <span className="tech-tag">SQL</span>
-          <span className="tech-tag">Pandas</span>
-          <span className="tech-tag">Scikit-learn</span>
+          <span className="tech-tag">Databricks</span>
+          <span className="tech-tag">Sparks</span>
+          <span className="tech-tag">Kafka</span>
+          <span className="tech-tag">Docker</span>
+          <span className="tech-tag">Snowflake</span>
+          <span className="tech-tag">BigQuery</span>
         </div>
       </div>
     </div>
@@ -188,7 +196,7 @@ const ElectronicsPage = () => {
           </div>
           <div className="expertise-card">
             <h3>Industrial Automation</h3>
-            <p>Implementing PLCs and SCADA systems for manufacturing efficiency.</p>
+            <p>Implementing robotics domain for manufacturing efficiency.</p>
           </div>
           <div className="expertise-card">
             <h3>Embedded Systems Development</h3>
@@ -200,12 +208,15 @@ const ElectronicsPage = () => {
       <div className="page-section">
         <h2>Technologies</h2>
         <div className="tech-tags">
-          <span className="tech-tag">Arduino</span>
           <span className="tech-tag">Raspberry Pi</span>
-          <span className="tech-tag">ESP32</span>
+          <span className="tech-tag">Arduino</span>
+          <span className="tech-tag">AVR</span>
+          <span className="tech-tag">ESP32/NodeMCU</span>
           <span className="tech-tag">MQTT</span>
           <span className="tech-tag">Node-RED</span>
           <span className="tech-tag">C/C++</span>
+          <span className="tech-tag">3D Printing</span>
+          <span className="tech-tag">Drone Technology</span>
           <span className="tech-tag">PCB Design</span>
         </div>
       </div>
@@ -235,7 +246,7 @@ const CommunityPage = () => {
             <p>Organizing and hosting events to share knowledge and connect people.</p>
           </div>
           <div className="expertise-card">
-            <h3>Mentorship Programs</h3>
+            <h3>Mentorship</h3>
             <p>Guiding aspiring developers and tech enthusiasts in their journey.</p>
           </div>
           <div className="expertise-card">
@@ -270,7 +281,7 @@ const InterestsPage = () => {
         <h2>About This Domain</h2>
         <p>
           Exploring diverse passions and connecting with like-minded individuals.
-          Life is about continuous learning, creativity, and building meaningful connections.
+          Life is about continuous learning, creativity, enjoying the interests and building meaningful connections.
         </p>
       </div>
 
@@ -282,25 +293,33 @@ const InterestsPage = () => {
             <p>Exploring cutting-edge technologies and emerging trends.</p>
           </div>
           <div className="expertise-card">
-            <h3>Creative Problem Solving</h3>
-            <p>Approaching challenges with innovative and out-of-the-box thinking.</p>
+            <h3>Pets, Wildlifes & Nature</h3>
+            <p>Explore the vast wilderness of nature and yes I love dogs and any pets that are not too aggresive! .</p>
           </div>
           <div className="expertise-card">
             <h3>Continuous Learning</h3>
             <p>Always curious, always growing, always exploring new domains.</p>
           </div>
           <div className="expertise-card">
-            <h3>Collaborative Projects</h3>
-            <p>Working together to create something greater than the sum of its parts.</p>
+            <h3>Gaming and Sports</h3>
+            <p>Enjoying creativity and enhusiasm of people. Pokemon, COC, Marvels COC, Cricket, Fifa, Super Mario </p>
+          </div>
+          <div className="expertise-card">
+            <h3>Self care</h3>
+            <p> I enjoy pushing my body to get better in shape. I enjoy doing light workouts, cardios, running, walking, meditation, yoga and bit of stretching.</p>
+          </div>
+          <div className="expertise-card">
+            <h3>Animie(s) and Sci-Fi</h3>
+            <p> Follower of Marvel, DC, DBZ, Pokemon, Digimon, One punch man.</p>
           </div>
         </div>
       </div>
 
       <div className="page-section">
-        <h2>Beyond Technology</h2>
+        <h2>Beyond </h2>
         <p>
-          When not coding or building circuits, I enjoy photography, reading about philosophy,
-          and exploring nature. Always open to conversations about life, universe, and everything!
+          When not working, I enjoy gaming, self care(as above) reading about philosophy, and exploring nature. 
+          Always open to conversations about life, universe, and everything!
         </p>
       </div>
     </div>
