@@ -22,7 +22,7 @@ const ProfileImage = () => {
   return (
     <div className="profile-section">
       <img 
-        src="https://raw.githubusercontent.com/stha4us/my-website/main/assets/file_00000000074861fba133676790d08862.png" 
+        src="https://raw.githubusercontent.com/stha4us/my-website/main/assets/file_homepage_self_image.jpg" 
         alt="Profile" 
         className="profile-image"
       />
@@ -275,6 +275,13 @@ const CommunityPage = () => {
 const InterestsPage = () => {
   return (
     <div className="page-content">
+      <div className="profile-section">
+      <img 
+        src="https://raw.githubusercontent.com/stha4us/my-website/main/assets/file_team_posture.png" 
+        alt="Profile" 
+        className="profile-image"
+      />
+      </div>
       <h1 className="page-title">Shared Interests</h1>
       
       <div className="page-section">
