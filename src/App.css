@@ -227,8 +227,10 @@
 /* Social Links */
 .social-links {
   display: flex;
-  gap: 32px;
+  gap: 72px;
   margin-top: 64px;
+  margin-bottom: 32px;
+  justify-content: center;
 }
 
 .social-links a {
