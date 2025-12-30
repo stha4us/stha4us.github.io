@@ -5,12 +5,12 @@ const DataAIPage = () => {
       <h1 className="page-title">Data, AI & Business Intelligence</h1>
       
       <div className="page-section">
-        <h2>About </h2>
+        <h2>Overview</h2>
         <p>
-          As we are drowning into data and starving for information more and more, the significance of BI and AI is rising.
-          Transforming raw data into actionable insights using cutting-edge AI and BI tools is the demand of modern industry.
-          Specialization in building intelligent systems that drive business decisions and unlocking the power of 
-          data-driven strategies is likely to be a demand for the upcoming days.
+          We are drowning into data and starving for information more and more. Hence, the significance of Business Intelligence(BI) 
+          and Artificial Intelligence(AI) is rising. Transforming raw data into actionable insights and making decisions/predictions out 
+          of it requires cutting-edge AI and BI tools. Specialization in building intelligent systems that drive business decisions 
+          and unlocking the power of data-driven strategies is the demand of modern industry.
         </p>
       </div>
 
@@ -33,15 +33,19 @@ const DataAIPage = () => {
             <h3>Business Intelligence Solutions</h3>
             <p>Implementing BI tools and strategies for organizational growth.</p>
           </div>
-            <div className="expertise-card">
+          <div className="expertise-card">
             <h3>Data Engineering</h3>
             <p>Managing the data stores, maintaining and orchestrating end-to-end data pipeline.</p>
           </div>
+          <div className="expertise-card">
+            <h3>AI & Agentic systems</h3>
+            <p>Building systems that can perform tasks without human intervention and explicitly programmed.</p>
+          </div> 
         </div>
       </div>
 
       <div className="page-section">
-        <h2>Helpful Tools & Technologies</h2>
+        <h2>Tools & Technologies</h2>
         <div className="tech-tags">
           <span className="tech-tag">Python</span>
           <span className="tech-tag">TensorFlow</span>
@@ -55,6 +59,8 @@ const DataAIPage = () => {
           <span className="tech-tag">Docker</span>
           <span className="tech-tag">Snowflake</span>
           <span className="tech-tag">BigQuery</span>
+          <span className="tech-tag">Hugging Face</span>
+          <span className="tech-tag">Langchain</span>
         </div>
       </div>
     </div>

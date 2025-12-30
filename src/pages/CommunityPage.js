@@ -5,7 +5,7 @@ const CommunityPage = () => {
       <h1 className="page-title">Community Engagement</h1>
       
       <div className="page-section">
-        <h2>About </h2>
+        <h2>Overview</h2>
         <p>
           Building connections and fostering collaborative environments for growth and innovation is 
           the demand of modern era. I believe in the power of community to drive learning, innovation, 
@@ -14,7 +14,7 @@ const CommunityPage = () => {
       </div>
 
       <div className="page-section">
-        <h2>Core Activities</h2>
+        <h2>Activities</h2>
         <div className="expertise-grid">
           <div className="expertise-card">
             <h3>Tech Meetups & Workshops</h3>
@@ -38,7 +38,7 @@ const CommunityPage = () => {
       <div className="page-section">
         <h2>Get Involved</h2>
         <p>
-          Interested in collaborating or joining our community events? 
+          Interested in collaborating or joining community events? 
           Reach out through social media or email to stay connected!
         </p>
       </div>

@@ -14,10 +14,10 @@ const InterestsPage = () => {
       <h1 className="page-title">Shared Interests</h1>
       
       <div className="page-section">
-        <h2>About: </h2>
+        <h2>Overview</h2>
         <p>
-          Exploring diverse passions and connecting with like-minded individuals.
-          Life is about continuous learning, creativity, enjoying the interests and building meaningful connections.
+          Exploring diverse fields of passions and connecting with like-minded individuals. Life is 
+          about continuous learning, creativity, enjoying and building meaningful connections.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const InterestsPage = () => {
           </div>
           <div className="expertise-card">
             <h3>Pets, Wildlifes & Nature</h3>
-            <p>Explore the vast wilderness of nature and yes I love dogs and any pets that are not too aggresive! .</p>
+            <p>Explore the vast wilderness of nature and pets that are not too aggresive! </p>
           </div>
           <div className="expertise-card">
             <h3>Continuous Learning</h3>
@@ -38,15 +38,15 @@ const InterestsPage = () => {
           </div>
           <div className="expertise-card">
             <h3>Gaming and Sports</h3>
-            <p>Enjoying creativity and enhusiasm of people. Pokemon, COC, Marvels COC, Cricket, Fifa, Super Mario </p>
+            <p>Enjoying creativity and enhusiasm of people. Experience more of Pokemon, COC, Marvels COC, Cricket, Fifa, Super Mario </p>
           </div>
           <div className="expertise-card">
             <h3>Self care</h3>
-            <p> I enjoy pushing my body to get better in shape. I enjoy doing light workouts, cardios, running, walking, meditation, yoga and bit of stretching.</p>
+            <p> Enjoy pushing limits to get better in shape. To add on light workouts, cardios, running, walking, meditation, yoga and stretching.</p>
           </div>
           <div className="expertise-card">
             <h3>Animie(s) and Sci-Fi</h3>
-            <p> Follower of Marvel, DC, DBZ, Pokemon, Digimon, One punch man.</p>
+            <p> More of Marvel, DC, DBZ, Pokemon, Digimon, One punch man.</p>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ const InterestsPage = () => {
       <div className="page-section">
         <h2>Beyond </h2>
         <p>
-          When not working, I enjoy gaming, self care(as above) reading about philosophy, and exploring nature. 
+          When not working, I enjoy gaming, self care, reading philosophical content, and exploring nature. 
           Always open to conversations about life, universe, and everything!
         </p>
       </div>
