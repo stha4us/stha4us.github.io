@@ -5,10 +5,11 @@ const ElectronicsPage = () => {
       <h1 className="page-title">Electronics Automation</h1>
       
       <div className="page-section">
-        <h2>About </h2>
+        <h2>Overview</h2>
         <p>
-          Its about designing intelligent automation systems for modern industrial and home applications.
-          Bridging the physical and digital worlds through innovative IoT solutions and smart systems.
+          Electronics automation incorporates designing intelligent automation systems for modern industrial, 
+          commercial, and home applications implementing principles of electronics engineering. It helps to 
+          bridge the gap between physical and digital worlds through innovative IoT solutions and smart systems.
         </p>
       </div>
 
