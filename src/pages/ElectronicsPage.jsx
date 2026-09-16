@@ -1,5 +1,41 @@
 // ELECTRONICS AUTOMATION PAGE
-const ElectronicsPage = () => {
+import { useApiCache } from '../hooks/useApiCache';
+
+export default function ElectronicsPage() {
+  const { data: electronicsTools, loading, error, refresh, isSlowLoad } = useApiCache('/api/section-lists/');
+
+    // Filter for only enabled home page content
+  const toolsContent = electronicsTools
+    ?.filter(item => 
+      item.page_overview.page === "electronics automation" && 
+      item.page_overview.section === "tools & technologies" && 
+      item.enabled)
+    ?? [];
+
+  if (loading) {
+  return (
+    <div className="home-page">
+      {isSlowLoad && (
+        <p className="slow-load-notice">
+          ⏳ Backend is waking up, this may take up to 60 seconds on first load…
+        </p>
+      )}
+      <div className="loading-skeleton">Loading...</div>
+    </div>
+  );
+}
+
+if (error) {
+    return (
+      <div className="home-page">
+        <div className="error-state">
+          <p>Could not load page content.</p>
+          <button onClick={refresh}>Try again</button>
+        </div>
+      </div>
+    );
+}
+
   return (
     <div className="page-content">
       <h1 className="page-title">Electronics Automation</h1>
@@ -39,20 +75,17 @@ const ElectronicsPage = () => {
       <div className="page-section">
         <h2>Helpful Tools & Technologies</h2>
         <div className="tech-tags">
-          <span className="tech-tag">Raspberry Pi</span>
-          <span className="tech-tag">Arduino</span>
-          <span className="tech-tag">AVR</span>
-          <span className="tech-tag">ESP32/NodeMCU</span>
-          <span className="tech-tag">MQTT</span>
-          <span className="tech-tag">Node-RED</span>
-          <span className="tech-tag">C/C++</span>
-          <span className="tech-tag">3D Printing</span>
-          <span className="tech-tag">Drone Technology</span>
-          <span className="tech-tag">PCB Design</span>
+          {
+            toolsContent.map(item =>
+            item.list_content.map((motivation, index) => (
+              <span key={`${item.id}-${index}`} className="tech-tag">
+                {motivation}
+              </span>
+            ))
+          )
+          }
         </div>
       </div>
     </div>
   );
 };
-
-export default ElectronicsPage;
