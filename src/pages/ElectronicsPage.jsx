@@ -77,9 +77,9 @@ if (error) {
         <div className="tech-tags">
           {
             toolsContent.map(item =>
-            item.list_content.map((motivation, index) => (
+            item.list_content.map((electronicsTools, index) => (
               <span key={`${item.id}-${index}`} className="tech-tag">
-                {motivation}
+                {electronicsTools}
               </span>
             ))
           )
