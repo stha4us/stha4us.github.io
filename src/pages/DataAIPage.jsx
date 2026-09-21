@@ -1,5 +1,41 @@
 // DATA, AI & BI PAGE
-const DataAIPage = () => {
+import { useApiCache } from '../hooks/useApiCache';
+
+export default function DataAIPage() {
+  const { data: dataTools, loading, error, refresh, isSlowLoad } = useApiCache('/api/section-lists/');
+
+  // Filter for only enabled home page content
+  const toolsContent = dataTools
+    ?.filter(item => 
+      item.page_overview.page === "data, ai & bi" && 
+      item.page_overview.section === "tools & technologies" && 
+      item.enabled)
+    ?? [];
+
+  if (loading) {
+  return (
+    <div className="home-page">
+      {isSlowLoad && (
+        <p className="slow-load-notice">
+          ⏳ Backend is waking up, this may take up to 60 seconds on first load…
+        </p>
+      )}
+      <div className="loading-skeleton">Loading...</div>
+    </div>
+  );
+ }
+
+if (error) {
+    return (
+      <div className="home-page">
+        <div className="error-state">
+          <p>Could not load page content.</p>
+          <button onClick={refresh}>Try again</button>
+        </div>
+      </div>
+    );
+}
+
   return (
     <div className="page-content">
       <h1 className="page-title">Data, AI & Business Intelligence</h1>
@@ -47,24 +83,17 @@ const DataAIPage = () => {
       <div className="page-section">
         <h2>Tools & Technologies</h2>
         <div className="tech-tags">
-          <span className="tech-tag">Python</span>
-          <span className="tech-tag">TensorFlow</span>
-          <span className="tech-tag">Power BI</span>
-          <span className="tech-tag">Tableau</span>
-          <span className="tech-tag">DBT</span>
-          <span className="tech-tag">SQL</span>
-          <span className="tech-tag">Databricks</span>
-          <span className="tech-tag">Sparks</span>
-          <span className="tech-tag">Kafka</span>
-          <span className="tech-tag">Docker</span>
-          <span className="tech-tag">Snowflake</span>
-          <span className="tech-tag">BigQuery</span>
-          <span className="tech-tag">Hugging Face</span>
-          <span className="tech-tag">Langchain</span>
+          {
+            toolsContent.map(item =>
+            item.list_content.map((dataTools, index) => (
+              <span key={`${item.id}-${index}`} className="tech-tag">
+                {dataTools}
+              </span>
+            ))
+          )
+          }
         </div>
       </div>
     </div>
   );
 };
-
-export default DataAIPage;
